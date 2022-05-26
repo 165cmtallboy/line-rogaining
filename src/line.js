@@ -23,7 +23,7 @@ router.post('/wh', (req, res, next) => {
             if(event.message.type == 'text' && event.message.text == 'チェックイン'){
                 const buttonMsg = {
                     "type": "template",
-                    "altText": "This is a buttons template",
+                    "altText": "チェックインを開始しましょう。",
                     "template": {
                         "type": "buttons",
                         "title": "チェックイン",
