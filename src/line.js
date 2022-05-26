@@ -32,7 +32,7 @@ router.post('/wh', (req, res, next) => {
                             {
                               "type": "uri",
                               "label": "チェックイン",
-                              "uri":  "https://d033-240d-1a-ee-2f00-f0a8-1f2b-63b7-b7bc.jp.ngrok.io/?lid="+event.source.userId
+                              "uri":  process.env.ENDPOINT+"/?lid="+event.source.userId
                             }
                         ]
                     }
