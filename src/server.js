@@ -5,8 +5,8 @@ import line from '@line/bot-sdk';
 import dotenv from 'dotenv';
 import line_router from './line.js';
 
-dotenv.config();
-
+dotenv.config();ß
+l
 const app = express()
 const port = process.env.PORT
 const client = new line.Client({
@@ -14,7 +14,7 @@ const client = new line.Client({
 });
 
 app.use(express.json());
-app.use(express.static('public'))
+app.use('/line', express.static('line-public'))
 
 app.get('/', (req, res) => {
   res.send('Hello World!')
